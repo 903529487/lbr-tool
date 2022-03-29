@@ -1,13 +1,13 @@
 {
   "name": "lbr-tool",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "repository": {
     "type": "git",
     "url": "https://gitee.com/liangbairong/lbr-tool"
   },
   "description": "",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack serve --config webpack.dev.js",
