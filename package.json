@@ -4,7 +4,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/yucccc/vue-pay-keyboard"
+    "url": "https://gitee.com/liangbairong/lbr-tool"
   },
   "description": "",
   "main": "dist/index.js",
