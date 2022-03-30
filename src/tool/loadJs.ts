@@ -1,12 +1,14 @@
+type ILoadJs = (url: string, callback: () => void) => void
 
 const isInclude = (name: string) => {
     var js = /js$/i.test(name);
-    var es:any = document.getElementsByTagName(js ? 'script' : 'link');
+    var es: any = document.getElementsByTagName(js ? 'script' : 'link');
     for (var i = 0; i < es.length; i++)
         if (es[i][js ? 'src' : 'href'].indexOf(name) != -1) return true;
     return false;
 }
-export default (url: string, callback: () => void) => {
+
+const loadJs = (url, callback): ILoadJs => {
     if (isInclude(url)) {
         callback();
     } else {
@@ -30,4 +32,7 @@ export default (url: string, callback: () => void) => {
         document.body.appendChild(script);
     }
 
+    return
 }
+
+export default loadJs

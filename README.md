@@ -6,8 +6,8 @@
 
 #### 按需加载
 ```javascript
-import getUrlParam from 'lbr-tool/lib/getUrlParam'
-import myLocalStorage from 'lbr-tool/lib/myLocalStorage'
+import getUrlParam from 'lbr-tool/lib/tool/getUrlParam'
+import myLocalStorage from 'lbr-tool/lib/tool/myLocalStorage'
 ```
 
 #### 全部加载

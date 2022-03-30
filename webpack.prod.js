@@ -12,7 +12,7 @@ module.exports = merge(common, {
         'myLocalStorage': './src/tool/myLocalStorage.ts',
     },
     output: {
-        path: path.join(__dirname,"/lib"),
+        path: path.join(__dirname,"/lib/tool"),
         filename: '[name].js',
         libraryTarget: 'umd',
         library: '[name]',
