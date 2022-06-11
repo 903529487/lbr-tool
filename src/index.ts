@@ -4,7 +4,7 @@ import {getUrlParam, myLocalStorage, loadJs} from './tool'
 // 获取url参数，兼容hash路由
 console.log(getUrlParam('key'));
 
-
+// 测试
 // 设置缓存
 myLocalStorage.set('keys', '内容', 20000)
 
