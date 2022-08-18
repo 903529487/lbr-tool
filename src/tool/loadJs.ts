@@ -12,7 +12,7 @@ const loadJs = (url, callback): ILoadJs => {
     if (isInclude(url)) {
         callback();
     } else {
-        var script: any = document.createElement('script');
+        const script: any = document.createElement('script');
         script.type = "text/javascript";
         if (typeof (callback) != "undefined") {
             if (script.readyState) {

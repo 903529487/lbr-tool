@@ -1,5 +1,5 @@
 //url
-export default  (name: string, url: string = '') => {
+const getUrlParam= (name: string, url: string = '') => {
     let qs = url || window.location.href,
         reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"),
         r = qs.substr(qs.indexOf("?") + 1).match(reg);
@@ -9,8 +9,10 @@ export default  (name: string, url: string = '') => {
             return decodeURI(r[2]).substring(0, i);
         } else {
             return decodeURI(r[2]);
-        };
+        }
     } else {
         return '';
     };
 };
+
+export default getUrlParam

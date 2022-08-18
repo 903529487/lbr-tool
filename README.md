@@ -16,20 +16,60 @@ import {getUrlParam, myLocalStorage, loadJs} from 'lbr-tool'
 
 // 获取url参数，兼容hash路由
 console.log(getUrlParam('key'));
+```
 
-// 设置缓存
+## 方法：
+
+
+### getUrlParam 获取url参数
+```javascript
+import {getUrlParam, myLocalStorage, loadJs} from 'lbr-tool'
+
+const key=getUrlParam('key')
+console.log(key);
+
+```
+
+### myLocalStorage 设置本地缓存
+```javascript
+import {myLocalStorage} from 'lbr-tool'
+
+// 设置缓存，20s后过期
 myLocalStorage.set('keys', '内容', 20000)
 
-// 设置缓存
+// 获取缓存
 const keys = myLocalStorage.get('keys')
 console.log(keys)
 
 // 删除缓存
 myLocalStorage.remove('keys')
 
+```
 
-// 动态加载js
+### loadJs 动态加载js
+```javascript
+import {loadJs} from 'lbr-tool'
+
 loadJs('http://code.jquery.com/jquery-migrate-1.2.1.min.js', () => {
     console.log('加载完成回调')
 })
+
+```
+
+
+### deepClone 深拷贝
+```javascript
+import {deepClone} from 'lbr-tool'
+const data={
+    name:'小明'
+}
+const newData=deepClone(data)
+```
+
+### debounce 防抖
+```javascript
+import {debounce} from 'lbr-tool'
+window.addEventListener('resize',debounce(()=>{
+    console.log('防抖')
+},300))
 ```
