@@ -73,3 +73,13 @@ window.addEventListener('resize',debounce(()=>{
     console.log('防抖')
 },300))
 ```
+
+### formatDate 日期格式化
+```javascript
+import {formatDate} from 'lbr-tool'
+console.log(formatDate('2022-11-11')) //2022-11-11 00:00:00
+console.log(formatDate(1660819197686))  //2022-08-18 18:39:57
+console.log(formatDate(1660819197686,'hh:mm:ss')) //18:39:57
+console.log(formatDate(1660819197686,'yyyy-mm-dd')) //2022-08-18
+```
+

@@ -1,6 +1,6 @@
 {
   "name": "lbr-tool",
-  "version": "1.1.0",
+  "version": "1.1.3",
   "private": false,
   "repository": {
     "type": "git",
@@ -24,5 +24,15 @@
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4",
     "webpack-merge": "^5.8.0"
-  }
+  },
+  "keywords": [
+    "js",
+    "tool",
+    "deepClone",
+    "debounce",
+    "vue",
+    "react",
+    "node",
+    "formatDate"
+  ]
 }
